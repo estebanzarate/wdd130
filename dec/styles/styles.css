@@ -58,7 +58,8 @@ header nav a:hover {
     border: 0.4rem solid var(--accent2-color);
 }
 
-.home-main-text {
+.home-main-text,
+.products-main-text {
     width: 50%;
     margin: 2rem auto;
     text-align: center;
@@ -66,7 +67,8 @@ header nav a:hover {
     line-height: 1.8rem;
 }
 
-.home-main-text::first-letter {
+.home-main-text::first-letter,
+.products-main-text::first-letter {
     font-size: 2rem;
     color: var(--primary-color);
     font-weight: 800;
@@ -270,10 +272,14 @@ footer a:nth-of-type(3):hover:active {
     transform: scale(0.95);
 }
 
-footer a:nth-of-type(2),
+footer a:nth-of-type(2) {
+    position: relative;
+    justify-self: end;
+}
+
 footer a:nth-of-type(3) {
     position: relative;
-    justify-self: center;
+    justify-self: start;
 }
 
 footer a:nth-of-type(2) {
