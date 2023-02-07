@@ -434,3 +434,21 @@ footer a img {
     justify-self: center;
     align-self: center;
 }
+
+.birthday-text,
+.wedding-text {
+    grid-row: 2 / 3;
+}
+
+.birthday-text p,
+.wedding-text p {
+    margin: 1rem 0;
+    text-indent: 2rem;
+    line-height: 1.5rem;
+}
+
+.birthday-text p::first-letter,
+.wedding-text p::first-letter {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
